@@ -1,0 +1,103 @@
+@keyframes rotation {
+
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes slide {
+
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+#Layer_1 {
+  height: auto;
+  width: 30%;
+}
+
+#hero {
+  width: 100%;
+  height: 100%;
+  background-color: $dark;
+  rect {
+    width: 100%;
+  }
+  #roto {
+    transform-origin: center;
+    transform-box: stroke-box;
+    animation: rotation 15s infinite linear;
+    position: absolute;
+    left: -50%;
+    top: -50%;
+  }
+  #roto-2 {
+    transform-origin: center;
+    transform-box: stroke-box;
+    animation: slide 15s infinite ease-in-out;
+    position: absolute;
+    left: -50%;
+    top: -50%;
+  }
+}
+
+#Layer_1,
+#hero {
+  .cls-1,
+  .cls-2,
+  .cls-3 {
+    fill: #fff;
+  }
+
+  .cls-4 {
+    font-family: Baloo2-Regular, "Baloo 2";
+    font-size: 6.01px;
+    font-variation-settings: "wght" 400;
+  }
+
+  .cls-5 {
+    fill: #f8991d;
+  }
+
+  .cls-6 {
+    letter-spacing: -0.02em;
+  }
+
+  .cls-2,
+  .cls-7 {
+    letter-spacing: 0em;
+  }
+
+  .cls-8 {
+    letter-spacing: 0.01em;
+  }
+
+  .cls-9 {
+    fill: #fbaf57;
+  }
+
+  .cls-3 {
+    letter-spacing: -0.01em;
+  }
+
+  .cls-10 {
+    letter-spacing: -0.01em;
+  }
+
+  .cls-11 {
+    fill: $dark;
+  }
+
+  .cls-12 {
+    letter-spacing: 0em;
+  }
+}

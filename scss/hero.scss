@@ -1,0 +1,33 @@
+.hero{
+    height: 100vh;
+   // background-image: url(./../imgs/hero-umy.jpg);
+   // background-repeat: no-repeat;
+   // background-position: center;
+   // background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+
+    .container{
+        position: relative;
+        .text-box{
+           
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: -111;
+        }
+    }
+
+    h1{
+        color:white;
+        visibility: hidden; 
+   }
+}

@@ -1,0 +1,20 @@
+Domov- logo,titulná fotka?
+Naše Služby -texty
+Prečo my- prerobiť texty
+portfolio- 6 prispevky  dodať linky 
+FAQs-doplniť otázky/odpovede
+Kontakt+copyrights- doplň socky IG,FB
+favicon štvorcový
+SEO/analytics? čo ste riešili a čo chcete riešiť?
+logo v PNG a prerobiť do .ICO
+
+
+
+
+robot.txt
+404
+blog multipage
+metapopisky
+webhosting + domena
+nahodiť obrázky cez main.js
+collapse na naše služby

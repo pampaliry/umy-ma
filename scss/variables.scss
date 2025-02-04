@@ -1,0 +1,82 @@
+///btns
+
+$input-btn-padding-y:         1.25rem;
+$input-btn-padding-x:         2rem;
+
+
+//cards
+$card-border-radius: 0;
+
+
+///typography
+$font-size-base:              1rem;
+
+// $font-size-root affects the value of `rem`, which is used for as well font sizes, paddings, and margins
+// $font-size-base affects the font size of the body text
+$font-size-root:              null !default;
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-sm:                $font-size-base * .875 !default;
+$font-size-lg:                $font-size-base * 1.25 !default;
+
+$font-weight-lighter:         lighter !default;
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-medium:          500 !default;
+$font-weight-semibold:        600 !default;
+$font-weight-bold:            700 !default;
+$font-weight-bolder:          bolder !default;
+
+$font-weight-base:            $font-weight-normal !default;
+
+$line-height-base:            1.25;
+$line-height-sm:              1.25 !default;
+$line-height-lg:              2 !default;
+
+$h1-font-size:                $font-size-base * 4 !default;
+$h2-font-size:                $font-size-base * 2 !default;
+$h3-font-size:                $font-size-base * 1.75 !default;
+$h4-font-size:                $font-size-base * 1.5 !default;
+$h5-font-size:                $font-size-base * 1.25 !default;
+$h6-font-size:                $font-size-base !default;
+
+$input-btn-font-size:          $font-size-base*1.25;
+
+
+////////////////////////////////////////////////////////////////
+// colors
+$white:#fff;
+$whiteShadow: $white 1px 1px 10px;
+$red: #CB3B39;
+$gray: #6C798F;
+$lightGray: #a9a9a9;
+$lightBlue:#7BACFF;
+$camo: #ff9900;
+$lightCamo: transparentize($camo, 0.7);
+$dark:#231f20;
+$primary: $camo;
+$light: #dedcdc;
+
+
+/// gradients
+
+$mainGradient: linear-gradient(to right, #035118, #725617);
+
+$menuGradient: linear-gradient(to right, #2228A3, #5594FF);
+$contactsGradient:linear-gradient(to right, #76D9AD, #006786);
+$gradient_1: linear-gradient(to right, #B13BE5, #009DE3);
+$gradient_2: linear-gradient(to right, #FF0844, #B721FF);
+$gradient_3: linear-gradient(to right, #A824E2, #482DDD);
+$gradient_4: linear-gradient(to right, #F58765, #C90031);
+$gradient_5:linear-gradient(to left, #FF5630, #B3008F);
+$gradient_6: linear-gradient(to left, #DE1546, #FFB199);
+$gradients: ( _1: $gradient_1, _2:$gradient_2, _3:$gradient_3, _4:$gradient_4, _5:$gradient_5, _6:$gradient_6, );
+//
+@each $item,
+$gradient in $gradients {
+    .item#{$item} {
+        background-image: $gradient;
+        article button a:hover {
+            background-image: $gradient;
+        }
+    }
+}

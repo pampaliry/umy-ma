@@ -1,0 +1,19 @@
+#Sluzby{
+    .card-img-top{
+        display: none;
+    }
+    .card{
+        .card-title{
+            padding-bottom: $spacer*2;
+        }
+        .card-body{
+            padding: $spacer*2;
+        }
+        ul{
+            list-style-type: disc;
+            li{
+                padding-bottom: $spacer*2;
+            }
+        }
+    }
+}

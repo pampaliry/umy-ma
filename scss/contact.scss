@@ -1,0 +1,53 @@
+.contact-data{
+    min-height: 70vh;
+}
+
+
+.vizitka-frame{
+    margin: auto;
+}
+
+
+
+.card{
+    justify-content: center;
+    text-align: center;
+    .card-img-top{
+        padding-top: $spacer*2.5;
+        max-width: 50%;
+        margin: auto;
+        //fill: $dark;
+    }
+    
+    &:hover{
+        transition: $transition-base;
+        //background-color: $light;
+        .card-img-top{  
+           
+            *{
+                fill: $camo;
+                text-shadow: $accordion-border-radius;
+                transition: $transition-base;
+            }
+        }
+        .card-title{
+         
+        }
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  

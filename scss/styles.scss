@@ -1,0 +1,128 @@
+@import "../node_modules/bootstrap/scss/functions";
+
+//Project variables
+@import "variables";
+
+// Import all of Bootstrap's CSS
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+
+//Project imports
+@import "typography";
+@import "hero";
+@import "services";
+@import "cennik";
+@import "portfolio";
+@import "faqs";
+@import "navigation";
+@import "contact";
+@import "burger";
+@import "buttons";
+@import "cards";
+@import "hover-experimental";
+@import "shinny-btns";
+@import "logo";
+@import "mobile-bonus";
+
+
+// my main customs
+
+
+ul {
+    list-style: none;
+  }
+  
+  a {
+    //text-decoration: none;
+    color: $primary;
+    display: inline-block;
+    transition: 0.2s;
+    text-decoration: none;
+    &:hover:not(.nav-link, .btn){
+      //transform: translate(0,-3px);
+      text-decoration: underline;
+     
+    }
+  }
+
+
+
+  .section{
+    min-height: 100vh;
+    display: block;
+    
+  }
+
+  .bg-camo{
+    //background-color: $lightCamo;
+    background-image: linear-gradient(45deg,rgb(234, 234, 234), $white,);
+  }
+
+  .overlay{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-image: linear-gradient(0deg,rgba(234, 234, 234, 0), $dark,);
+    //box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    //backdrop-filter: blur(5px);
+    //-webkit-backdrop-filter: blur(5px);
+}
+
+
+///////
+/// scrollbar
+
+body::-webkit-scrollbar {
+  width: .65em;
+  border-radius: 5px;
+}
+ 
+body::-webkit-scrollbar-track {
+  //box-shadow: inset 0 0 6px $primary;
+  background: $lightCamo;
+  
+  
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: $dark;
+  //outline: 3px solid $primary;
+  border-radius: 5px;
+}
+
+
+
+html {
+  /* For Firefox */
+  overflow-y: scroll;
+  scrollbar-color: $primary  $dark;
+  scrollbar-width: thin;
+}
+
+///////////////////////
+
+.underline-list[data-animation="bonus"] .underline:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);
+}
+
+
+.underline-list .underline::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background:linear-gradient(to right, #ffffff00, $camo, $camo) ;//linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
+  z-index: 1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+}
+
+
+
+

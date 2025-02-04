@@ -1,0 +1,23 @@
+.mobile-bonus{
+    width: 70%;
+    left: 15%;
+    position: absolute;
+    background-color: $dark;
+    padding-top:40vw;
+    a.btn.btn-danger{
+        padding: $spacer*2.5 0;
+        position: relative;
+        width: 100%;
+        z-index: 10;
+        color: $light;
+        font-weight: 600;
+        background-color: rgba(50, 50, 50, 0.75);
+        border-color: $camo;
+        border-width: 2px;
+        border-color: transparent;
+        &:hover, &:focus, &:active{
+            border-color: $camo;
+            background-color: rgba(50, 50, 50, 1);
+        }
+    }
+}
